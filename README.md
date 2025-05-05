@@ -1,4 +1,5 @@
-# Zylo - Branding & Marketing Agency Landing Page (Mock up)
+# Zylo - Branding & Marketing Agency
+Landing Page (Mock up)
 
 ## 🫧 Description
 
