@@ -46,11 +46,11 @@ function sectionFloatIn() {
 function statsCounter() {
   const counters = document.querySelectorAll("#statistics h3[data-target]");
 
-  const countUp = (el, target, suffixText) => {
+  const countUp = (h3, dataTarget, unitLabel) => {
     let current = 0;
-    const isDecimal = target % 1 !== 0;
-    const steps = 20;
-    const increment = target / steps;
+    const isDecimal = dataTarget % 1 !== 0;
+    const steps = 40;
+    const increment = dataTarget / steps;
     let stepCount = 0;
 
     const update = () => {
@@ -59,12 +59,11 @@ function statsCounter() {
 
       let displayVal = isDecimal ? current.toFixed(1) : Math.floor(current);
 
-      el.textContent = displayVal;
-
-      if (suffixText) {
+      h3.textContent = displayVal;
+      if (unitLabel) {
         const span = document.createElement("span");
-        span.textContent = suffixText;
-        el.appendChild(span);
+        span.textContent = unitLabel;
+        h3.appendChild(span);
       }
 
       if (stepCount < steps) {
@@ -76,24 +75,24 @@ function statsCounter() {
   };
 
   const observer = new IntersectionObserver(
-    (entries, obs) => {
+    (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const el = entry.target;
-          const target = parseFloat(el.dataset.target);
-          const span = el.querySelector("span");
-          const suffixText = span ? span.textContent : "";
-          if (span) span.remove();
+          const h3 = entry.target;
+          const target = parseFloat(h3.dataset.target);
+          const unitSpan = h3.querySelector("span");
+          const unitLabel = unitSpan ? unitSpan.textContent : "";
+          if (unitSpan) unitSpan.remove();
 
-          countUp(el, target, suffixText);
-          obs.unobserve(el);
+          countUp(h3, target, unitLabel);
+          observer.unobserve(h3);
         }
       });
     },
     { threshold: 0.5 }
   );
 
-  counters.forEach((el) => observer.observe(el));
+  counters.forEach((h3) => observer.observe(h3));
 }
 
 //Service toggles
@@ -110,9 +109,17 @@ function serviceToggles() {
 function burgerMenu() {
   const burger = document.getElementById("burger");
   const navLinks = document.querySelector(".nav-links");
+  const links = document.querySelectorAll(".nav-links a");
 
   burger.addEventListener("click", () => {
     burger.classList.toggle("active");
     navLinks.classList.toggle("open");
+  });
+
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      burger.classList.remove("active");
+      navLinks.classList.remove("open");
+    });
   });
 }
