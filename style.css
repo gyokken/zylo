@@ -990,7 +990,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
-    padding: 1rem;
   }
 
   .stat-block {
