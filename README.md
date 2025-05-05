@@ -1,11 +1,10 @@
-# Zylo - Branding & Marketing Agency Landing Page (Mock up)
+# Zylo - Branding & Marketing Agency
+Landing Page Mock up
 
 ## 🫧 Description
 
 This project is a **modern branding and marketing agency website** built with HTML, CSS and JavaScript.
-The website includes interactive features like form validation, statistics counters and scroll-based animations. The main goal was to create a **user-friendly and interactive** site, focusing on responsiveness and accessibility.
-
-I also practiced **Flexbox** and **Grid** for layout design and used **Figma** for **UI/UX design**. The design is abstract and modern, with clean lines, a minimalistic approach and a focus on high-quality imagery and animations to enhance the user experience.
+The website includes interactive features like form validation, statistics counters and scroll-based animations. The main goal was to create a **user-friendly and interactive** site.
 
 ## 🫧 What I Worked On
 
@@ -58,7 +57,7 @@ Below are links to some of the resources I used during the development of this p
 
 - **Hero Video**:
   Video by [Muhammad ilham Marlis](https://www.vecteezy.com/members/_mim_) on [Vecteezy](https://www.vecteezy.com/video/46549146-loop-animation-3d-abstract-fluid-blob-liquid-shape-3d-animation-black-and-whiteloop)
-- **Projects Placeholders**: All credits to [Sweety & Co] (https://www.behance.net/sweetyandco).
+- **Projects Placeholders**: All credits to [Sweety & Co](https://www.behance.net/sweetyandco).
 - **Testimonial Picture**:
   Photo by [Alexander Hipp](https://unsplash.com/@alexanderhipp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-man-wearing-glasses-and-a-black-shirt-iEEBWgY_6lA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash).
 - **Articles Covers**:
