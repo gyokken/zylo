@@ -49,7 +49,7 @@ function statsCounter() {
   const countUp = (h3, dataTarget, unitLabel) => {
     let current = 0;
     const isDecimal = dataTarget % 1 !== 0;
-    const steps = 40;
+    const steps = 20;
     const increment = dataTarget / steps;
     let stepCount = 0;
 
