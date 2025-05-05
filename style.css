@@ -112,6 +112,7 @@ section.animate {
 }
 
 button {
+  all: unset;
   background: transparent;
   border: 1px solid var(--color-primary);
   border-radius: 999px;
@@ -119,6 +120,7 @@ button {
   font-weight: 500;
   transition: background-color 0.2s ease, color 0.2s ease;
   cursor: pointer;
+  font-family: var(--font-sans);
 }
 
 button:hover {
@@ -198,6 +200,7 @@ button:hover {
   height: 100%;
   z-index: -1;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .blob-video {
@@ -236,7 +239,7 @@ button:hover {
 
 .hero-text .italic {
   font-style: italic;
-  text-decoration: underline dotted;
+  border-bottom: 3px dotted var(--color-primary);
 }
 
 .hero-content h1 {
@@ -345,7 +348,7 @@ button:hover {
 .services-intro .italic {
   font-style: italic;
   color: var(--color-accent);
-  text-decoration: underline dotted;
+  border-bottom: 3px dotted var(--color-accent);
 }
 
 .services-list {
@@ -471,7 +474,7 @@ button:hover {
 
 #projects h2 span {
   font-style: italic;
-  text-decoration: underline dotted;
+  border-bottom: 3px dotted var(--color-primary);
 }
 
 #projects button {
@@ -724,7 +727,7 @@ button:hover {
 #newsletter h2 span {
   font-style: italic;
   font-weight: 200;
-  text-decoration: underline dotted;
+  border-bottom: 3px dotted var(--color-accent);
   color: var(--color-accent);
 }
 
@@ -944,7 +947,7 @@ footer {
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--color-accent);
-    text-decoration: underline dotted var(--color-accent);
+    border-bottom: 3px dotted var(--color-accent);
     text-transform: uppercase;
     transition: color 0.3s ease;
     margin-left: 2rem;
