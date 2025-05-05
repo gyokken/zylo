@@ -125,7 +125,7 @@ button {
 
 button:hover {
   background-color: var(--color-primary);
-  color: var(--color-accent);
+  color: var(--color-bg);
 }
 
 /* navigation */
@@ -978,7 +978,7 @@ footer {
 
   /* stats */
   #statistics {
-    padding-bottom: 0;
+    padding: 2rem;
   }
 
   .stat-header {
@@ -989,7 +989,7 @@ footer {
   .stat-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 6rem;
+    gap: 3rem;
     padding: 1rem;
   }
 
