@@ -1,5 +1,5 @@
 # Zylo - Branding & Marketing Agency
-Landing Page (Mock up)
+Landing Page Mock up
 
 ## 🫧 Description
 
@@ -59,7 +59,7 @@ Below are links to some of the resources I used during the development of this p
 
 - **Hero Video**:
   Video by [Muhammad ilham Marlis](https://www.vecteezy.com/members/_mim_) on [Vecteezy](https://www.vecteezy.com/video/46549146-loop-animation-3d-abstract-fluid-blob-liquid-shape-3d-animation-black-and-whiteloop)
-- **Projects Placeholders**: All credits to [Sweety & Co] (https://www.behance.net/sweetyandco).
+- **Projects Placeholders**: All credits to [Sweety & Co](https://www.behance.net/sweetyandco).
 - **Testimonial Picture**:
   Photo by [Alexander Hipp](https://unsplash.com/@alexanderhipp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-man-wearing-glasses-and-a-black-shirt-iEEBWgY_6lA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash).
 - **Articles Covers**:
