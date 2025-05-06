@@ -274,7 +274,7 @@ button:hover {
 #statistics {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .stat-header {
