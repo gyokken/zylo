@@ -215,7 +215,7 @@ button:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.444);
+  background: rgba(255, 255, 255, 0.324);
   z-index: 1;
   pointer-events: none;
 }
@@ -239,7 +239,7 @@ button:hover {
 
 .hero-text .italic {
   font-style: italic;
-  border-bottom: 3px dotted var(--color-primary);
+  border-bottom: 4px dotted var(--color-primary);
 }
 
 .hero-content h1 {
@@ -274,11 +274,12 @@ button:hover {
 #statistics {
   max-width: var(--max-width);
   margin: 0 auto;
-  text-align: center;
+  padding: 3rem;
 }
 
 .stat-header {
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .stat-header h2 {
@@ -288,27 +289,43 @@ button:hover {
 .stat-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 6rem;
-  max-width: var(--max-width);
+  gap: 3rem;
   margin-bottom: 3rem;
-  align-items: flex-start;
+  place-items: center;
 }
 
 .stat-block {
-  max-width: 320px;
-  margin: 1rem auto;
+  max-width: 260px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  width: 100%;
   text-align: left;
-  max-width: 100%;
+}
+
+.stat-block:nth-child(1) {
+  margin-left: 1rem;
+  margin-right: auto;
+  text-align: left;
+}
+
+.stat-block:nth-child(2) {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stat-block:nth-child(3) {
+  margin-left: auto;
+  margin-right: 1rem;
+  text-align: right;
 }
 
 .stat-block h3 {
   font-size: 5rem;
   font-weight: 600;
   line-height: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 .stat-block h3 span {
@@ -320,10 +337,6 @@ button:hover {
 .stat-block p {
   display: inline-block;
   font-size: 1rem;
-}
-
-.stat-block p {
-  max-width: 19ch;
 }
 
 /* services */
@@ -557,6 +570,11 @@ button:hover {
   width: fit-content;
 }
 
+.projects-wrapper a:hover {
+  text-decoration: none;
+  color: var(--color-bg);
+}
+
 /* testimonial */
 #testimonial {
   text-align: center;
@@ -666,7 +684,7 @@ button:hover {
 .article-card:hover {
   transform: translateY(-4px);
   box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.12);
-  border: 1px solid rgba(180, 173, 234, 0.4);
+  border: 2px solid rgba(180, 173, 234, 0.4);
 }
 
 .article-card figure {
@@ -689,7 +707,6 @@ button:hover {
   font-size: 1rem;
   font-weight: 500;
   padding: 1rem 1rem 0.5rem;
-  text-shadow: 0 1px 4px rgba(180, 173, 234, 0.4);
 }
 
 .article-card a {
@@ -966,7 +983,7 @@ footer {
 
   .hero-content {
     margin: 0;
-    padding: 0;
+    padding: 2rem;
     align-items: flex-start;
     width: 100%;
     max-width: 600px;
@@ -978,12 +995,12 @@ footer {
 
   /* stats */
   #statistics {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .stat-header {
     text-align: center;
-    margin-bottom: 0;
+    padding: 0 1rem;
   }
 
   .stat-grid {
@@ -993,16 +1010,20 @@ footer {
   }
 
   .stat-block {
-    margin-bottom: 0;
+    margin: 0;
   }
 
-  .stat-block {
-    &:nth-child(odd) {
-      text-align: left;
-    }
-    &:nth-child(even) {
-      text-align: right;
-    }
+  .stat-block:nth-child(1),
+  .stat-block:nth-child(3) {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: auto;
+  }
+
+  .stat-block:nth-child(2) {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 1rem;
   }
 
   .stat-block h3 {
@@ -1021,7 +1042,6 @@ footer {
   }
 
   .stat-block p {
-    max-width: 100%;
     padding: 0;
     margin: 0;
   }
@@ -1136,6 +1156,7 @@ footer {
     max-height: 300px;
     overflow: hidden;
     margin: 0.5rem;
+    border: 1px solid rgba(180, 173, 234, 0.4);
   }
 
   .article-card:hover {
