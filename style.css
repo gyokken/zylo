@@ -288,14 +288,14 @@ button:hover {
 
 .stat-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 4rem;
   margin-bottom: 3rem;
   place-items: center;
 }
 
 .stat-block {
-  max-width: 260px;
+  max-width: 240px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
